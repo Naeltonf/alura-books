@@ -56,16 +56,16 @@ function Pesquisa() {
                 placeholder="Escreva sua próxima leitura"
                 onBlur={evento => {
                     const textoDigitado = evento.target.value
-                    const resultadoPesquisa = livros.filter( livro => livro.nome.includes(textoDigitado))
+                    const resultadoPesquisa = livros.filter(livro => livro.nome.includes(textoDigitado))
                     setLivrosPesquisados(resultadoPesquisa)
                 }}
             />
-            { livrosPesquisados.map( livro => (
+            {livrosPesquisados.map(livro => (
                 <Resultado>
-                    <img alt='Imagem' src={livro.src}/>
+                    <img src={livro.src} />
                     <p>{livro.nome}</p>
                 </Resultado>
-            ) ) }
+            ))}
         </PesquisaContainer>
     )
 }

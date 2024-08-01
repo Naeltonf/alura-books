@@ -6,10 +6,10 @@ const Input = styled.input`
     border: 1px solid #FFF;
     padding: 20px 140px;
     border-radius: 50px;
-    width: 200 px;
+    width: 200px;
     color: #FFF;
     font-size: 16px;
-    margin-botton: 10px;
+    margin-bottom: 30px;
 
     &::placeholder {
         color: #FFF;
@@ -18,4 +18,3 @@ const Input = styled.input`
 `
 
 export default Input
-
